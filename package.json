@@ -12,12 +12,16 @@
     "init-local-db": "wrangler d1 execute entry-db --local --file scripts/data-init.sql"
   },
   "dependencies": {
+    "@dnd-kit/helpers": "^0.5.1",
+    "@dnd-kit/react": "^0.5.1",
     "cn": "^0.3.0",
     "isbot": "^5.1.36",
     "lucide-react": "^1.45.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-router": "^8"
+    "react-router": "^8",
+    "sonner": "^2.0.8",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.13",
