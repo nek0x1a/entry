@@ -1,0 +1,164 @@
+/* 应用主题色令牌、深色主题映射和页面基础布局。 */
+@import "tailwindcss" source(".");
+
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-background: var(--background);
+  --color-background-hover: var(--background-hover);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-foreground: var(--surface-foreground);
+  --color-surface-foreground-hover: var(--surface-foreground-hover);
+  --color-surface-border: var(--surface-border);
+  --color-surface-border-hover: var(--surface-border-hover);
+  --color-muted: var(--muted);
+  --color-muted-hover: var(--muted-hover);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted-foreground-hover: var(--muted-foreground-hover);
+  --color-muted-border: var(--muted-border);
+  --color-muted-border-hover: var(--muted-border-hover);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-foreground-hover: var(--primary-foreground-hover);
+  --color-primary-border: var(--primary-border);
+  --color-primary-border-hover: var(--primary-border-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-foreground-hover: var(--secondary-foreground-hover);
+  --color-secondary-border: var(--secondary-border);
+  --color-secondary-border-hover: var(--secondary-border-hover);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-foreground-hover: var(--accent-foreground-hover);
+  --color-accent-border: var(--accent-border);
+  --color-accent-border-hover: var(--accent-border-hover);
+  --color-success: var(--success);
+  --color-success-hover: var(--success-hover);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-foreground-hover: var(--success-foreground-hover);
+  --color-success-border: var(--success-border);
+  --color-success-border-hover: var(--success-border-hover);
+  --color-info: var(--info);
+  --color-info-hover: var(--info-hover);
+  --color-info-foreground: var(--info-foreground);
+  --color-info-foreground-hover: var(--info-foreground-hover);
+  --color-info-border: var(--info-border);
+  --color-info-border-hover: var(--info-border-hover);
+  --color-warning: var(--warning);
+  --color-warning-hover: var(--warning-hover);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-foreground-hover: var(--warning-foreground-hover);
+  --color-warning-border: var(--warning-border);
+  --color-warning-border-hover: var(--warning-border-hover);
+  --color-destructive: var(--destructive);
+  --color-destructive-hover: var(--destructive-hover);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-foreground-hover: var(--destructive-foreground-hover);
+  --color-destructive-border: var(--destructive-border);
+  --color-destructive-border-hover: var(--destructive-border-hover);
+}
+
+[data-theme="dark"] {
+  /* 前景背景 */
+  --background: var(--color-slate-700);
+  --background-hover: var(--color-slate-600);
+  --foreground: var(--color-slate-100);
+  --border: var(--color-slate-900);
+  --border-hover: var(--color-slate-500);
+
+  /* 表面 */
+  --surface: var(--color-slate-600);
+  --surface-hover: var(--color-slate-400);
+  --surface-foreground: var(--color-slate-100);
+  --surface-foreground-hover: var(--color-slate-100);
+  --surface-border: var(--color-slate-900);
+  --surface-border-hover: var(--color-slate-500);
+
+  /* 弱化 */
+  --muted: var(--color-slate-800);
+  --muted-hover: var(--color-slate-500);
+  --muted-foreground: var(--color-slate-500);
+  --muted-foreground-hover: var(--color-slate-300);
+  --muted-border: var(--color-slate-800);
+  --muted-border-hover: var(--color-slate-600);
+
+  /* 首要 */
+  --primary: var(--color-taupe-700);
+  --primary-hover: var(--color-taupe-400);
+  --primary-foreground: var(--color-amber-400);
+  --primary-foreground-hover: var(--color-amber-300);
+  --primary-border: var(--color-amber-800);
+  --primary-border-hover: var(--color-amber-600);
+
+  /* 次要 */
+  --secondary: var(--color-mist-700);
+  --secondary-hover: var(--color-mist-400);
+  --secondary-foreground: var(--color-cyan-400);
+  --secondary-foreground-hover: var(--color-cyan-300);
+  --secondary-border: var(--color-cyan-800);
+  --secondary-border-hover: var(--color-cyan-600);
+
+  /* 强调 */
+  --accent: var(--color-slate-600);
+  --accent-hover: var(--color-slate-400);
+  --accent-foreground: var(--color-slate-100);
+  --accent-foreground-hover: var(--color-slate-100);
+  --accent-border: var(--color-slate-800);
+  --accent-border-hover: var(--color-slate-600);
+
+  /* 成功 */
+  --success: var(--color-mist-700);
+  --success-hover: var(--color-mist-400);
+  --success-foreground: var(--color-green-400);
+  --success-foreground-hover: var(--color-green-300);
+  --success-border: var(--color-green-800);
+  --success-border-hover: var(--color-green-600);
+
+  /* 信息 */
+  --info: var(--color-mist-700);
+  --info-hover: var(--color-cyan-600);
+  --info-foreground: var(--color-cyan-400);
+  --info-foreground-hover: var(--color-cyan-300);
+  --info-border: var(--color-cyan-800);
+  --info-border-hover: var(--color-cyan-600);
+
+  /* 警告 */
+  --warning: var(--color-taupe-700);
+  --warning-hover: var(--color-taupe-600);
+  --warning-foreground: var(--color-yellow-400);
+  --warning-foreground-hover: var(--color-yellow-300);
+  --warning-border: var(--color-yellow-800);
+  --warning-border-hover: var(--color-yellow-600);
+
+  /* 危险 */
+  --destructive: var(--color-mauve-700);
+  --destructive-hover: var(--color-mauve-600);
+  --destructive-foreground: var(--color-red-400);
+  --destructive-foreground-hover: var(--color-red-300);
+  --destructive-border: var(--color-red-800);
+  --destructive-border-hover: var(--color-red-600);
+}
+
+html,
+body {
+  @apply bg-background;
+  @apply text-foreground;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+.page-framework {
+  width: clamp(45.6rem, 91%, 96rem);
+  margin: 2rem auto;
+}

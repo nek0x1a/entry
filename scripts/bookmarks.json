@@ -1,0 +1,40 @@
+[
+  {
+    "name": "重要书签组",
+    "emphasized": true,
+    "description": "",
+    "bookmarks": [
+      {
+        "name": "重要书签1",
+        "href": "https://example.com/",
+        "icon": "layout-grid",
+        "description": "重要书签描述"
+      },
+      {
+        "name": "重要书签2",
+        "href": "https://example.com/",
+        "icon": "layout-grid",
+        "description": "重要书签描述"
+      }
+    ]
+  },
+  {
+    "name": "普通书签组",
+    "emphasized": true,
+    "description": "",
+    "bookmarks": [
+      {
+        "name": "书签3",
+        "href": "https://example.com/",
+        "icon": "layout-grid",
+        "description": "重要书签描述"
+      },
+      {
+        "name": "书签4",
+        "href": "https://example.com/",
+        "icon": "layout-grid",
+        "description": "重要书签描述"
+      }
+    ]
+  }
+]

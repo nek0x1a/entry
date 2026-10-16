@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "entry",
+  "compatibility_date": "2026-09-07",
+  "main": "./workers/app.ts",
+  "vars": {},
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "entry-db", // 填入d1数据库名称
+      "database_id": "" // 填入d1数据库ID
+    }
+  ]
+}

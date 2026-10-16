@@ -1,0 +1,24 @@
+/* 编辑页两种网格行的固定操作列与弹性文本列。 */
+.bookmark-edit-grid-columns {
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns:
+    2rem
+    2rem
+    12rem
+    10rem
+    minmax(15rem, 25rem)
+    minmax(12rem, 1fr)
+    2rem;
+}
+.bookmark-group-edit-grid-columns {
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns:
+    2rem
+    2rem
+    minmax(4rem, 16rem)
+    minmax(16rem, 1fr)
+    2rem
+    2rem;
+}
