@@ -46,7 +46,7 @@ export default function BookmarkPage({ loaderData }: Route.ComponentProps) {
       </div>
       <main className="flex flex-col gap-8">
         {bookmarkEmphasizedGroups}
-        <div className="grid gap-2 grid-cols-[repeat(auto-fit,minmax(12em,1fr))]">
+        <div className="grid gap-2 grid-cols-[repeat(auto-fill,minmax(12em,1fr))]">
           {bookmarkNormalGroups}
         </div>
       </main>

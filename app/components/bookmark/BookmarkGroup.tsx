@@ -23,7 +23,7 @@ export default function BookmarkGroup({
     <div
       className={cn(
         bookmarkGroupData.emphasized
-          ? "grid gap-2 grid-cols-[repeat(auto-fit,minmax(12em,1fr))]"
+          ? "grid gap-2 grid-cols-[repeat(auto-fill,minmax(12em,1fr))]"
           : "flex flex-col",
         className,
       )}

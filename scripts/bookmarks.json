@@ -20,7 +20,7 @@
   },
   {
     "name": "普通书签组",
-    "emphasized": true,
+    "emphasized": false,
     "description": "",
     "bookmarks": [
       {
