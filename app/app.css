@@ -159,6 +159,6 @@ body {
 }
 
 .page-framework {
-  width: clamp(45.6rem, 91%, 96rem);
+  width: clamp(24.5rem, 92%, 98rem);
   margin: 2rem auto;
 }

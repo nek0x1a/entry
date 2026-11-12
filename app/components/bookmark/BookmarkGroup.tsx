@@ -18,15 +18,11 @@ export default function BookmarkGroup({
       ></Bookmark>
     );
   });
+  const onlyContents = !bookmarkGroupData.emphasized;
 
   return (
     <div
-      className={cn(
-        bookmarkGroupData.emphasized
-          ? "grid gap-2 grid-cols-[repeat(auto-fill,minmax(12em,1fr))]"
-          : "flex flex-col",
-        className,
-      )}
+      className={cn(onlyContents ?? "flex flex-col", className)}
       {...restProps}
     >
       <h2

@@ -26,6 +26,7 @@ export default function BookmarkPage({ loaderData }: Route.ComponentProps) {
     .filter((group) => group.emphasized)
     .map((group) => (
       <BookmarkGroup
+        className="grid gap-2 grid-cols-[repeat(auto-fill,minmax(12rem,1fr))]"
         bookmarkGroupData={group}
         key={group.id}
       ></BookmarkGroup>
